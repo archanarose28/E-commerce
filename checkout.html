@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <!--  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1d2cda9eac.js" crossorigin="anonymous"></script>
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+-->
+
+
+
+    <title>E-commerce</title>
+    <link href="style.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+
+<!--CHECKOUT PAGE-->
+<section id="checkout">
+    <div class="py-5 text-center">
+      <h2>CHECKOUT PAGE</h2>
+    </div>
+    
+    <div class="container">
+    <H4 class="mb-4">Billing Address</H4>
+    <form novalidate>
+      <div class="row g-3">
+    
+    
+    <div class="col-sm-6">
+      <br><br>
+    
+    <label for="firstName" class="form-label">First Name</label>
+    <input id="firstName" type="text" class="form-control" placeholder="Archana" required>
+    <div class="invalid-feedback">
+      Valid First Name is Required!!
+    </div>
+    </div>
+    
+    
+    
+    <div class="col-sm-6">
+      <br><br>
+    
+      <label for="LastName" class="form-label">Last Name</label>
+      <input id="LastName" type="text" class="form-control" placeholder="Biju" required>
+      <div class="invalid-feedback">
+        Valid Last Name is Required!!
+      </div>
+      </div>
+      
+    
+    <!--username-->
+    
+    
+    <div class="col-12">
+      <br><br>
+      <label for="UserName" class="form-label">User Name</label>
+      <div class="input-group-text">
+        <span class="input-group-text">@</span>
+      <input id="UserName" type="text" class="form-control" placeholder="archbiju" required>
+    </div>
+      <div class="invalid-feedback">
+        Valid User Name is Required!!
+      </div>
+      </div>
+      
+    
+      
+    <!--Country-->
+    
+    
+    <div class="col-md-5">
+      <br><br>
+    
+      <label for="country" class="form-label">Country</label>
+    <select id="UserName"
+    class="form-control">
+    <option value="">Choose....</option>
+    <option value="India">India</option>
+    <option value="Nepal">Nepal</option>
+    <option value="Bhutan">Bhutan</option>
+    <option value="Australia">Australia</option>
+    <option value="Canada">Canada</option>
+    
+    </select>
+    
+    
+      <div class="invalid-feedback">
+        Valid Country is Required!!
+      </div>
+      </div>
+      
+    
+      
+    <!--State-->
+    
+    
+    <div class="col-md-4">
+      <br><br>
+    
+      <label for="state" class="form-label">State</label>
+    <select id="UserName"
+    class="form-control">
+    <option value="">Choose....</option>
+    <option value="kerala">kerala</option>
+    <option value="Karnataka">Karnataka</option>
+    <option value="Rajasthan">Rajasthan</option>
+    <option value="Assam">Assam</option>
+    <option value="Sikkim">Sikkim</option>
+    <option value="Arunanchal">Arunanchal</option>
+    <option value="Goa">Goa</option>
+    <option value="Delhi">Delhi</option>
+    
+    </select>
+    
+    
+      <div class="invalid-feedback">
+        Valid Country is Required!!
+      </div>
+      </div>
+      
+      
+    <!--Pin code-->
+    
+    
+    <div class="col-md-3">
+      <br><br>
+    
+      <label for="code" class="form-label">Pin Code</label>
+    <input id="code" type="number"
+    class="form-control"placeholder="686578"  required>
+    
+    
+      <div class="invalid-feedback">
+        Valid pincode is Required!!
+      </div>
+      </div>
+      
+    
+    
+    <hr class="my-4">
+    <div class="col-12">
+      <br><br><br>
+    
+    <div class="form-check">
+      <input id="samraddr" type="checkbox" class="form-check-input">
+      <label class="form-check-label"
+      for="samraddr">
+      Shipping address is same as the Billing Address<br><br>
+    </label>
+    
+    </div>
+    </div>
+    <!--PAYMENT-->
+    
+    <hr class="my-4">
+    <h4 class="mb-3">Payment</h4>
+    
+    
+    <div class="form-check"><br><br><br><br>
+      
+      &emsp;&emsp;
+      <input id="credit" name="paymentmethod" type="radio" class="form-check-input" checked required> &emsp;
+      <label for="credit">Credit Card&emsp;&emsp;&emsp;</label>
+    </div>
+    
+    <div class="form-check"><br><br><br><br>
+    
+      <input id="debit"name="paymentmethod" type="radio" class="form-check-input" checked required>&emsp;&emsp;
+      <label for="debit">Debit Card&emsp;&emsp;&emsp;</label>
+    </div>
+    
+    
+    
+    <div class="form-check"><br><br><br><br>
+    
+      <input id="paypal"name="paymentmethod" type="radio" class="form-check-input" checked required>&emsp;&emsp;&emsp;
+      <label for="debit">Paypal&emsp;&emsp;&emsp;</label>
+    </div>
+    
+    <!--ROW FOR CARD DETAILS-->
+    <div class="row" my-3 gy-3>
+      &emsp;&emsp;&emsp;
+      &emsp;&emsp;&emsp;&emsp;&emsp; &nbsp;
+    <BR><BR><BR><BR>
+      <BR><BR>
+    
+    <div class="col-md-5"><br>
+      &emsp; Name Of CardHolder
+      <input type="text" class="form-control">
+      <small class="text-muted">
+          Full name as displayed on card.
+      </small>    
+    </div>
+    
+    <div class="col-md-4" ><br>
+    
+      Credit Card Number
+      <input type="text" class="form-control">
+    
+    </div>
+    
+
+    <!--ROW FOR CARD DETAILS-->
+    <div class="row" my-3 gy-3>
+        &emsp;&emsp;&emsp;
+        &emsp;&emsp;&emsp;&emsp;&emsp; &nbsp;
+      <BR><BR><BR><BR>
+        <BR><BR>
+      
+      <div class="col-md-5"><br>
+        &emsp;Expiration Date
+        <input type="text" class="form-control">
+        <small class="text-muted">
+            Expiration date is required!
+        </small>    
+      </div>
+      
+      <div class="col-md-4" ><br>
+        CVV
+        <input type="text" class="form-control">
+      </div>
+    
+<hr class=my-4 >
+<button class="btn btn-primary btn-lg ">Continue to Checkout</button>
+      
+
+    </div>
+    
+    
+    
+    
+    
+    </div>  <!--row div-->
+    
+    </form>
+    </div>
+    
+    </section>
+    
+    
+    
+    
+    
+    
+    
+        <!-- Optional JavaScript; choose one of the two! -->
+    
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+            crossorigin="anonymous"></script>
+    
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    </body>
+    
+    </html>
+    
+    
+
+
